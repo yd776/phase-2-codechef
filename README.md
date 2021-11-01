@@ -141,6 +141,115 @@ return 0;
 }
 
 
+**Question8:**
+
+using namespace std **ERROR THERE SHOULD BR A SEMICOLUN AT THE END;**
+
+void printSums(int N)
+
+{
+
+int start=1, end=(N+1)/2;
+
+while (start<end)
+
+{
+
+int sum=0;
+
+for (int i=start;i<=end;i++)
+
+{
+
+sum=+i;
+
+if (sum == N)
+
+{
+
+for (j=start,j<=I,j++) **ERROR SHOULD BE(for(int j=start;j<=i;j++){) J WAS NOT DECLARED and I should be small and semicolun not given in for statement also no starting brackets **
+
+cout<<j<<" ";
+
+cout<<"/n";
+
+break;
+
+}
+
+if (sum>N)
+
+break **ERROR SHOULD END WITH SEMICOLUN**
+
+}
+
+sum=0;
+
+start++;
+
+}
+
+}
+
+int main()
+
+{
+
+int n;
+
+cin>>n;
+
+printsums(n);
+
+return 0;
+
+}
+
+
+**Question9:**
+
+
+using namespace std;
+
+int main() {
+
+int length
+
+cout<<enter the length of the array"<<endl;
+
+cin>>length;
+
+int array(length];
+
+for(int i=0;i<length;i++){
+
+cin>>array[i];
+
+}
+
+int min=array[0];max=array[0];
+
+for(int i=1;i<length;i++){
+
+if(array[i]>max)
+
+max = array[i];
+
+else if(array[i]<<min)
+
+min = array[i];
+
+}
+
+cout<< min<<" "<<max;
+
+return std;
+
+}
+
+
+
+
 
  
  
