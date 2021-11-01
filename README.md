@@ -1,3 +1,7 @@
+  ***TASK 1***
+  
+  ERRORS ARE MARKED IN BOLD
+  
   **Question 1:**
   
 int main() 
@@ -7,7 +11,7 @@ int number, LD;
 
 printf(" Enter a number"4589);
 
-**ERROR :4589should not be there as it is outside the quotes it will give error**
+**ERROR :4589 should not be there as it is outside the quotes it will give error**
 
 scanf("%d", &number); 
 
@@ -75,29 +79,44 @@ a>10?printf("Yes");:printf("No");    **ERROR in ? the else condition is given by
 
 **Question5:**
 
-#include <iostream>
- 
-using namespace std;
- 
-int main() {
- 
-int o; i; s;
+int main() { 
 
-for(o=5; o>=1; o--)
+int o; i; s;   **ERROR SHOULD BE (int o,i,s;) to declare multiple variables of same data type we need to use commas between them**
 
- {
+for(o=5; o>=1; o--) 
+{ 
 
- for(s=1 s<=5-o s++)
+for(s=1 s<=5-o s++) **ERROR SHOULD BE (for(s=1;s<=5;s++)) in for loop to give conditions we need to separate by ;**
 
-     cout<<" ";
+cout<<" "; 
 
- for (i=1 i<=o i++){
+for (i=1 i<=o i++){ 
 
- cout>>"*";}
+cout>>"*";} **ERROR SHOULD BE (cout<”*”;)} the cout<<operator is << not>>**
 
- cout<<endl;
+cout<<endl; 
 
- }}}
+}}} }} **ERROR EXTRA } should be only 2}}**
+
+**Question6:** 
+
+z=int(“Enter a number:”) **ERROR Input not taken from user**
+
+for in range [0,9]:  **ERROR variable x not declared**
+
+if z=x:  **ERROR should be (z==x) since we are comparing values**
+
+print(“They are equal”); 
+
+else: 
+
+print(“They are not equal”) 
+
+
+
+
+
+
 
 
 
