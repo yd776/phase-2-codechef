@@ -27,7 +27,7 @@ int main()
 
 for(int i=1;i <= 4;i--)  
 
-**WILL GO FOR INFINITE LOOP SHOULD BE ++**
+**ERROR WILL GO FOR INFINITE LOOP SHOULD BE ++**
 
 { 
 
@@ -69,7 +69,7 @@ void main() { **ERROR if return value is an integer the function should be of in
 
 char a='A'; 
 
-a>10?printf("Yes");:printf("No");    **in ? the else condition is given by: not ;: return 0;** 
+a>10?printf("Yes");:printf("No");    **ERROR in ? the else condition is given by: not ;: return 0;** 
 
 }
 
@@ -98,6 +98,7 @@ for(o=5; o>=1; o--)
  cout<<endl;
 
  }}}
+
 
 
 
