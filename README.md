@@ -102,7 +102,7 @@ cout<<endl;
 
 z=int(“Enter a number:”) **ERROR Input not taken from user**
 
-for in range [0,9]:  **ERROR variable x not declared**
+for in range [0,9]:  **ERROR variable x not declared in loop**
 
 if z=x:  **ERROR should be (z==x) since we are comparing values**
 
@@ -111,6 +111,15 @@ print(“They are equal”);
 else: 
 
 print(“They are not equal”) 
+
+**Question 7**
+
+ 
+ 
+
+
+
+
 
 
 
