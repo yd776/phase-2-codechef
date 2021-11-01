@@ -114,6 +114,34 @@ print(“They are not equal”)
 
 **Question 7**
 
+class test{ 
+
+int my_variable; 
+
+} **ERROR should be a semicolun(;) after defining a class**
+
+int main() { 
+
+test code_chef; 
+
+cin>>code_chef.my_variable; 
+
+if(code_chef.my_variable%2==0){ cout<<"Even"; 
+
+} 
+
+else{ 
+
+cout<<odd; **Error SHOULD BE (cout<<"odd";) as odd is a string
+
+} 
+
+return 0; 
+
+}
+
+
+
  
  
 
