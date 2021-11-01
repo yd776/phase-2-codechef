@@ -65,12 +65,39 @@ return 0;
 
 #include <stdio.h> 
 
-void main() { if return value is an integer the function should be of integer type
+void main() { **ERROR if return value is an integer the function should be of integer type**
 
 char a='A'; 
 
-a>10?printf("Yes");:printf("No");    in ? the else condition is given by: not ;: return 0; 
+a>10?printf("Yes");:printf("No");    **in ? the else condition is given by: not ;: return 0;** 
+
 }
+
+**Question5:**
+
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+int o; i; s;
+
+for(o=5; o>=1; o--)
+
+ {
+
+ for(s=1 s<=5-o s++)
+
+     cout<<" ";
+
+ for (i=1 i<=o i++){
+
+ cout>>"*";}
+
+ cout<<endl;
+
+ }}}
 
 
 
