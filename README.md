@@ -260,7 +260,7 @@ int t,i,diff_count;
 
 scanf("%d";&t) **ERROR SHOULD BE(scanf("%d,&t);)**
 
-char s[100001], 
+char s[100001], **ERROR STATEMENT SHOULD END WITH A SEMICOLON**
 
 while(t+-){ **ERROR SHOULD BE EITHER(t++ or t--)**
 
@@ -270,7 +270,7 @@ scanf("%s",s);
 
 for(int i=0;i<strlen(s)-1;i++){ 
 
-if(s[i]===s[i+1])
+if(s[i]===s[i+1])**ERROR SHOULD BE == FOR COMPARING VALUES**
 
 diff_count++; 
 
@@ -280,7 +280,7 @@ printf("%d\n",diff_count);
 
 return 0; 
 
-} 
+} **ERROR NO OF BRACKETS DO NOT MATCH SHOULD BE ON MORE } **
 
 
 
