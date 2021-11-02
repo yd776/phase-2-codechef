@@ -315,6 +315,9 @@ return 0;
 ***TASK2***
 
 
+Q1:Given a group of words, rearrange them in alphabetical order on the basis of their fourth alphabet. Take the last letter into consideration if the word contains less than 4 
+
+characters. Minimum word length would be of two characters. 
 
 
 
