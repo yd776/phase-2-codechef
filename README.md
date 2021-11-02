@@ -215,11 +215,11 @@ int main() {
 
 int length
 
-cout<<enter the length of the array"<<endl;
+cout<<enter the length of the array"<<endl; **ERROR NO STARTING (") in the  Statement
 
 cin>>length;
 
-int array(length];
+int array(length];**ERROR BRACKETS DO NOT MATCH"
 
 for(int i=0;i<length;i++){
 
@@ -246,6 +246,43 @@ cout<< min<<" "<<max;
 return std;
 
 }
+
+
+**Question10:**
+
+*include <string.h>**ERROR SHOULD BE (#include >string.h>
+
+ main() **ERROR no Return Value given**
+
+{ 
+
+int t,i,diff_count; 
+
+scanf("%d";&t) **ERROR SHOULD BE(scanf("%d,&t);)**
+
+char s[100001], 
+
+while(t+-){ **ERROR SHOULD BE EITHER(t++ or t--)**
+
+diff_count=0; 
+
+scanf("%s",s); 
+
+for(int i=0;i<strlen(s)-1;i++){ 
+
+if(s[i]===s[i+1])
+
+diff_count++; 
+
+} 
+
+printf("%d\n",diff_count); 
+
+return 0; 
+
+} 
+
+
 
 
 
