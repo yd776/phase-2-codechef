@@ -1,6 +1,6 @@
   ***TASK 1***
   
-  ERRORS ARE MARKED IN BOLD
+  ERRORS ARE  WRITEN IN  BOLD
   
   **Question 1:**
   
@@ -20,6 +20,31 @@ LD = number / 10; **ERROR: for last digit of a number replace / by %**
 printf(" \n The Last Digit of a Given Number %d = %d", number, LD); return 0; 
 
 } 
+
+
+**Question 2:**
+
+int sumcal(int len, int* arr, int value) 
+
+{ 
+
+int sum = 0; 
+
+for(int i =0 ; i< len-1; i++ ) 
+
+{ 
+
+if(arr[i]%value == 0) 
+
+sum =+ arr[i]; **ERROR SHOULD BE(sum =arr[i]) 
+
+} 
+
+return sum; 
+
+}
+
+
 
 **Question 3:**
 
