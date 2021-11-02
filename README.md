@@ -315,14 +315,127 @@ return 0;
 ***TASK2***
 
 
-Q1:Given a group of words, rearrange them in alphabetical order on the basis of their fourth alphabet. Take the last letter into consideration if the word contains less than 4 
+**Q1:**
+Given a group of words, rearrange them in alphabetical order on the basis of their fourth alphabet. Take the last letter into consideration if the word contains less than 4 
 
 characters. Minimum word length would be of two characters. 
 
 
 
 
+**Q2:**
+Given an array arr[] and an integer K where K is smaller than the size of the array, the task is to find the Kth smallest element in the given array. It is given that all 
  
+array elements are distinct. Check if kth element is a prime number or not. 
+
+Input: size of array = 5 
+
+Array [] = 7 10 4 5 2 
+
+Kth element = 4 
+
+ans)
+
+#include <stdio.h>
+
+
+#include <iostream>
+
+using namespace std;
+ 
+int main ()
+
+ {
+ 
+ int n;
+ 
+ cout<<"PLEASE ENTER SIZE OF ARRAY";
+ 
+ cout<<"\n";
+ 
+ cin>>n;
+ 
+ int arr[n];
+ 
+ cout<<"ENTER THE ARRAY ELEMENTS";
+ 
+ cout<<"\n";
+ 
+ for(int i=0;i<n;i++){
+ 
+   cin>>arr[i];
+ 
+ }
+ 
+ int counter=1;
+ 
+ while(counter<n){
+ 
+      for(int i=0;i<n-counter;i++){
+         
+ if(arr[i]>arr[i+1]){//using bubble sort as the list is unsorted
+            
+ int temp=arr[i];
+             
+ arr[i]=arr[i+1];
+             
+ arr[i+1]=temp;
+ 
+ }
+ 
+ }
+ 
+ counter++;
+ 
+ }
+ 
+ int k;
+ 
+ cout<<"please enter k value";
+ 
+ cout<<"\n";
+ 
+ cin>>k;
+
+ cout<< "kth smallest value is ";
+ 
+ cout<<arr[k-1];
+ 
+ cout<<"\n";
+ 
+ int l;
+ 
+ 
+ l=arr[k-1];
+ 
+ if (l==0 ||l== 1) {
+ 
+ cout<<"THE KTH ELEMENT IS NOT PRIME";
+ 
+ }
+ 
+ else {
+ 
+ for (int i = 2; i <= l / 2; i++) {
+ 
+                      if (l % i == 0) {
+                
+                      cout<<"THE KTH ELEMENT IS NOT PRIME";
+                
+                             break;
+            
+                             }
+         
+                             cout>>"THE KTH ELEMENT IS PRIME";
+        
+ }
+   
+ }
+  
+ return 0;
+
+ }
+
  
 
 
