@@ -320,7 +320,45 @@ Given a group of words, rearrange them in alphabetical order on the basis of the
 
 characters. Minimum word length would be of two characters. 
 
+ans)
 
+LINK TO PROGRAM
+
+https://onlinegdb.com/hfS8MAK-2p
+
+LANGUAGE USED PYTHON 3
+
+CODE
+
+n=int(input())
+
+words=[]
+
+for i in range(n):
+
+    string=""
+    
+    string=str(input())
+    
+    if len(string)>4:
+        
+        string=string[3]+string
+    
+    else:
+        
+        string=string[-1]+string
+    
+    words.append(string)
+
+words=sorted(words)   
+
+for i in range(n):
+    
+    words[i]=words[i][1:]
+
+for i in range(n)   : 
+    
+    print(words[i])
 
 
 
