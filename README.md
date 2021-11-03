@@ -334,9 +334,17 @@ Array [] = 7 10 4 5 2
 
 Kth element = 4 
 
+
+
 ans)
 
-#include <stdio.h>
+LINK TO PROGRAM
+
+https://onlinegdb.com/tHydzE2rK
+
+
+
+
 
 
 #include <iostream>
@@ -426,7 +434,7 @@ int main ()
             
                              }
          
-                             cout>>"THE KTH ELEMENT IS PRIME";
+                             cout<<"THE KTH ELEMENT IS PRIME";
         
  }
    
@@ -435,6 +443,67 @@ int main ()
  return 0;
 
  }
+ 
+ 
+ 
+ **Q3**
+ 
+ 
+ 
+ Q3: Rajesh is a 5 year old kid who is practising the alphabet. He is really confused with the homework he has got and he needs your help to do the homework. The homework is to 
+ 
+ print alternate letters from A to Z in alternate uppercase and lowercase
+ 
+ ANS)
+ LINK TO PROGRAM
+ 
+ https://onlinegdb.com/IVqJw1lan
+ 
+ 
+ #include <iostream>
+
+using namespace std;
+
+int main()
+
+ {
+    int a=0;
+    
+    char start_lowercase='a';
+    
+    char start_uppercase='A';
+    
+    
+    
+    while(start_lowercase <='z' &start_uppercase<='Z'){
+        
+         if((a%2)==0){
+         
+           cout<<start_uppercase;
+         
+            }
+        
+         else {cout<<start_lowercase;}
+        
+         a=a+1;
+        
+         start_lowercase+=2;
+        
+         start_uppercase+=2;
+     
+     cout<<"\n";   
+    
+     }
+    
+
+    return 0;
+
+ }
+
+ 
+ 
+ 
+ 
 
  
 
