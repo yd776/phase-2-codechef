@@ -323,6 +323,8 @@ characters. Minimum word length would be of two characters.
 
 
 
+
+
 **Q2:**
 Given an array arr[] and an integer K where K is smaller than the size of the array, the task is to find the Kth smallest element in the given array. It is given that all 
  
@@ -343,7 +345,9 @@ LINK TO PROGRAM
 https://onlinegdb.com/tHydzE2rK
 
 
+LANGUAGE USED C++
 
+CODE
 
 
 
@@ -459,7 +463,11 @@ int main ()
  
  https://onlinegdb.com/IVqJw1lan
  
+ LANGUAGE USED C++
  
+ 
+ CODE
+                                    
  #include <iostream>
 
 using namespace std;
@@ -500,6 +508,108 @@ int main()
     return 0;
 
  }
+ 
+ Q4: 
+ 
+ Given a number n, find out whether this number is Chef number or not.Let's consider an example of 297 as a Chef number: square of 297 is 88209; divided it into two 
+ 
+ portions, 88 and 209; now total them, 88 + 209 to get 297 back. Consider an n-digit number k (take another example of 45). Square it (452 = 2025) and add the right n digits 
+ 
+ (that is 25) to the 
+
+ remaining n or n-1 digits (in this case, 20). If the resultant quantity is k, then k is a Chef number (45 is a Chef number as 20 + 25 = 45). Splitting of the squared number 
+ 
+ should be based on the number of digits of the given number. 
+ 
+ 
+ ANS)
+ 
+ LINK TO CODE
+ 
+ https://onlinegdb.com/I-ysIyb_kD
+ 
+ 
+ LANGUAGE USED PYTHON 3
+
+CODE 
+n=int(input())
+
+k=n
+
+n=n**2
+
+n=str(n)
+
+x=list(n)
+
+length=len(x)
+
+half_length=length//2
+
+sum1=[]
+
+sum2=[]
+ 
+if length%2==0:
+    
+     for i in range(half_length):
+        
+        sum1.append(x[i])
+        
+     for i in range(half_length,length):
+        
+        sum2.append(x[i])
+    
+    str1=''
+    
+    str2=''
+    
+    str1=str1.join(sum1)
+    
+    str2=str2.join(sum2)
+    
+    str1=int(str1)
+    
+    str2=int(str2)
+    
+    if str1+str2==k:
+     
+       print("Chef Number")
+    
+    else:
+        
+       print("Not Chef Number")
+        
+        
+else:
+    
+    for i in range(half_length):
+    
+       sum1.append(x[i])
+        
+    for i in range(half_length,length):
+       
+       sum2.append(x[i])
+    
+     str1=''
+     
+     str2=''
+    
+     str1=str1.join(sum1)
+     
+     str2=str2.join(sum2)
+     
+     str1=int(str1)
+     
+     str2=int(str2)
+    
+     if str1+str2==k:
+       
+        print("Chef Number")
+        
+    else:
+       
+        print("Not Chef Number")    
 
  
  
