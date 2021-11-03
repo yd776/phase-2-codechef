@@ -470,6 +470,7 @@ int main()
     int a=0;
     
     char start_lowercase='a';
+ 
     
     char start_uppercase='A';
     
